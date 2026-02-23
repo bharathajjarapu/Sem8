@@ -1,4 +1,4 @@
-# Unit I: Optimization and Machine Learning Fundamentals
+﻿# Unit I: Optimization and Machine Learning Fundamentals
 
 ---
 
@@ -14,7 +14,7 @@
 - **Global Maximum**: Maximum of all local maxima
 - **Local Minimum**: Minimum within neighborhood, not globally lowest
 - **Global Minimum**: Minimum of all local minima
-- Slope changes sign: positive → zero → negative around minima
+- Slope changes sign: positive â†’ zero â†’ negative around minima
 - Functions may have no maxima, no minima, or multiple of each
 - Example: $f(x) = x^2$ has minimum at $x=0$, no maximum
 - Example: $f(x) = -x^2$ has maximum at $x=0$, no minimum
@@ -31,7 +31,7 @@ $$\frac{df}{dx} = 0$$
 ### Exam Points
 **Properties:**
 - Slope = 0 at extrema
-- Second derivative test: $f''(x) > 0$ → minima, $f''(x) < 0$ → maxima
+- Second derivative test: $f''(x) > 0$ â†’ minima, $f''(x) < 0$ â†’ maxima
 
 **Limitations:**
 - Solving $\frac{df}{dx} = 0$ difficult for complex functions (e.g., $f(x) = \log(1 + e^{ax})$)
@@ -44,7 +44,7 @@ $$\frac{df}{dx} = 0$$
 
 **Source:** Video "MAXIMA AND MINIMA LEC 360" (0:00-14:25)
 
-![Maxima and Minima](maxima_minima.png)
+![Maxima and Minima](images/maxima_minima.png)
 
 ***
 
@@ -94,7 +94,7 @@ $$\nabla_{\mathbf{w}} L = \sum_{i=1}^n \frac{-y_i \mathbf{x}_i e^{-y_i \mathbf{w
 
 **Source:** Video "VECTOR CALCULUS GRAD LEC 361" (0:00-21:36)
 
-![Gradient Vector Field](gradient_vector_field.png)
+![Gradient Vector Field](images/gradient_vector_field.png)
 
 ***
 
@@ -117,14 +117,14 @@ $$\nabla_{\mathbf{w}} L = \sum_{i=1}^n \frac{-y_i \mathbf{x}_i e^{-y_i \mathbf{w
 **Optimization Problem:**
 $$x^* = \arg\min_x f(x)$$
 
-**Minimization ↔ Maximization:**
+**Minimization â†” Maximization:**
 $$\min f(x) = \max(-f(x))$$
 $$\max f(x) = \min(-f(x))$$
 
 **Slope Analysis:**
-- Left side: $0^\circ < \theta < 90^\circ$ → $\tan\theta > 0$ (positive slope)
-- At minimum: $\theta = 0^\circ$ → $\tan\theta = 0$ (zero slope)
-- Right side: $90^\circ < \theta < 180^\circ$ → $\tan\theta < 0$ (negative slope)
+- Left side: $0^\circ < \theta < 90^\circ$ â†’ $\tan\theta > 0$ (positive slope)
+- At minimum: $\theta = 0^\circ$ â†’ $\tan\theta = 0$ (zero slope)
+- Right side: $90^\circ < \theta < 180^\circ$ â†’ $\tan\theta < 0$ (negative slope)
 
 ### Exam Points
 **Properties:**
@@ -144,8 +144,8 @@ $$\max f(x) = \min(-f(x))$$
 
 **Source:** Video "GRADIENT DESCENT ALGORITHM GEOMETRIC Intuition LEC 362" (0:00-13:20)
 
-![Gradient Descent Geometric Intuition](gradient_descent_geometric.png)
-![Slope Changes](slope_changes.png)
+![Gradient Descent Geometric Intuition](images/gradient_descent_geometric.png)
+![Slope Changes](images/slope_changes.png)
 
 ***
 
@@ -160,8 +160,8 @@ $$\max f(x) = \min(-f(x))$$
 - **Small Learning Rate**: Slow convergence, stable, many iterations needed
 - **Large Learning Rate**: Fast initial progress, may overshoot, oscillation risk
 - **Optimal Learning Rate**: Balance between speed and stability
-- Too small → computational inefficiency
-- Too large → divergence, no convergence
+- Too small â†’ computational inefficiency
+- Too large â†’ divergence, no convergence
 - Adaptive learning rates adjust during training
 
 ### Key Formula
@@ -193,7 +193,7 @@ Where:
 
 **Source:** Derived from LEC 362-363 concepts
 
-![Learning Rate Effect](learning_rate_effect.png)
+![Learning Rate Effect](images/learning_rate_effect.png)
 
 ***
 
@@ -207,7 +207,7 @@ Where:
 ### Key Concepts
 - **Linear Model**: $\hat{y} = \mathbf{w}^T\mathbf{x} + b$
 - **Cost Function**: $J(\mathbf{w}) = \frac{1}{2n}\sum_{i=1}^n (y_i - \mathbf{w}^T\mathbf{x}_i)^2$
-- Convex cost function → single global minimum
+- Convex cost function â†’ single global minimum
 - Gradient descent guaranteed to find optimal solution
 - Update rule applied to all parameters simultaneously
 
@@ -243,7 +243,7 @@ $$\mathbf{w}_{k+1} = \mathbf{w}_k + \frac{\alpha}{n}\sum_{i=1}^n (y_i - \mathbf{
 
 **Source:** Applied from vector calculus concepts in LEC 361
 
-![Linear Regression Cost](linear_regression_cost.png)
+![Linear Regression Cost](images/linear_regression_cost.png)
 
 ***
 
@@ -297,7 +297,7 @@ Where $\mathcal{B}$ is random batch of size $b$
 
 **Source:** Extension of gradient descent concepts from LEC 362-363
 
-![Batch vs SGD](batch_vs_sgd.png)
+![Batch vs SGD](images/batch_vs_sgd.png)
 
 ***
 
@@ -354,7 +354,7 @@ $$\nabla_{\boldsymbol{\lambda}} \mathcal{L} = 0$$
 
 **Source:** Advanced optimization extension
 
-![Constrained Optimization](constrained_optimization.png)
+![Constrained Optimization](images/constrained_optimization.png)
 
 ***
 
@@ -418,7 +418,7 @@ $$\text{Variance Ratio}_i = \frac{\lambda_i}{\sum_{j=1}^d \lambda_j}$$
 
 **Source:** Optimization and ML fundamentals
 
-![PCA Visualization](pca_visualization.png)
+![PCA Visualization](images/pca_visualization.png)
 
 ***
 
@@ -475,7 +475,7 @@ $$\mathbf{w}_{k+1} = \mathbf{w}_k - \alpha \nabla_{\mathbf{w}} L(\mathbf{w}_k)$$
 
 **Source:** Video "VECTOR CALCULUS GRAD LEC 361" (13:00-21:36)
 
-![Sigmoid Function](sigmoid_function.png)
+![Sigmoid Function](images/sigmoid_function.png)
 
 ---
 

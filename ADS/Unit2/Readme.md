@@ -1,4 +1,4 @@
-# Unit II: Convolutional Neural Networks (CNN)
+﻿# Unit II: Convolutional Neural Networks (CNN)
 
 ---
 
@@ -52,7 +52,7 @@ Where $G_x$ and $G_y$ are horizontal and vertical gradients
 
 **Source**: CNN Edge Detection Explained (YouTube - Simplified AI Course)
 
-![Edge Detection Process](edge_detection.png)
+![Edge Detection Process](images/edge_detection.png)
 
 ---
 
@@ -68,7 +68,7 @@ Where $G_x$ and $G_y$ are horizontal and vertical gradients
 - **Same Padding**: Output size equals input size
 - **Zero Padding**: Most common, adds zeros around borders
 - Border pixels participate in fewer convolutions without padding
-- Multiple conv layers without padding → rapid size reduction
+- Multiple conv layers without padding â†’ rapid size reduction
 - Padding prevents information loss at image boundaries
 
 ### Key Formula
@@ -108,7 +108,7 @@ $$P = \frac{F - 1}{2}$$
 
 **Source**: Padding and Stride in CNN (YouTube - codebasics)
 
-![Padding Visualization](padding.png)
+![Padding Visualization](images/padding.png)
 
 ---
 
@@ -122,7 +122,7 @@ $$P = \frac{F - 1}{2}$$
 ### Key Concepts
 - **Stride = 1**: Filter moves one pixel at a time (standard)
 - **Stride = 2**: Filter moves two pixels, reduces output by ~50%
-- Larger stride → faster receptive field expansion
+- Larger stride â†’ faster receptive field expansion
 - Trade-off: Speed vs. Information retention
 - Reduces computational cost significantly
 - Alternative to pooling for downsampling
@@ -164,7 +164,7 @@ $$O = \left\lfloor\frac{7 - 3}{2}\right\rfloor + 1 = 3$$
 
 **Source**: Convolutions - Padding, Stride (YouTube - D2L.ai)
 
-![Stride Comparison](stride.png)
+![Stride Comparison](images/stride.png)
 
 ---
 
@@ -179,8 +179,8 @@ $$O = \left\lfloor\frac{7 - 3}{2}\right\rfloor + 1 = 3$$
 - **RGB Input**: Height $\times$ Width $\times$ 3 channels
 - **Filter Depth**: Must match input channels (3 for RGB)
 - Each filter channel convolves with corresponding input channel
-- Results summed across channels → single 2D feature map
-- Multiple filters → multiple output channels
+- Results summed across channels â†’ single 2D feature map
+- Multiple filters â†’ multiple output channels
 - Filter shape: $f \times f \times n_c^{in}$ where $n_c^{in}$ = input channels
 
 ### Key Formula
@@ -221,7 +221,7 @@ Where:
 
 **Source**: Convolution over RGB Images (YouTube - D2L.ai)
 
-![RGB Convolution](rgb_convolution.png)
+![RGB Convolution](images/rgb_convolution.png)
 
 ---
 
@@ -236,7 +236,7 @@ Where:
 - **Input**: $n_H \times n_W \times n_c^{in}$
 - **Filters**: $n_{filters}$ kernels of size $f \times f \times n_c^{in}$
 - **Output**: $n_H' \times n_W' \times n_{filters}$
-- Each filter → one output channel
+- Each filter â†’ one output channel
 - **Activation Function**: ReLU typically applied after convolution
 - **Bias**: One per filter, added to entire feature map
 - **Weight Sharing**: Same filter weights across spatial locations
@@ -329,7 +329,7 @@ Only maximum value location receives gradient.
 
 **Source**: Max Pooling in CNN (YouTube - Navid Shirzadi)
 
-![Max Pooling Operation](max_pooling.png)
+![Max Pooling Operation](images/max_pooling.png)
 
 ---
 
@@ -378,7 +378,7 @@ Where:
 
 **Source**: CNN Training Optimization (YouTube - Rajasekhar Classes)
 
-![CNN Training Loss Convergence](cnn_training.png)
+![CNN Training Loss Convergence](images/cnn_training.png)
 
 ---
 
@@ -406,3 +406,4 @@ Where:
 ---
 
 **End of Unit II Notes**
+

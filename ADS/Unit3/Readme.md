@@ -1,4 +1,4 @@
-# Unit-III: CNN Architectures and Advanced Concepts
+﻿# Unit-III: CNN Architectures and Advanced Concepts
 
 ---
 
@@ -46,7 +46,7 @@ $$RF_{n} = RF_{n-1} + (k - 1) \times stride$$
 ### Source
 CNN Receptive Field | Deep Learning Animated (0:00-3:00)
 
-![Receptive Field Growth](receptive_field.png)
+![Receptive Field Growth](images/receptive_field.png)
 
 ---
 
@@ -107,12 +107,12 @@ Understanding the Effective Receptive Field in Deep CNNs (Paper 2016)
 - Revolutionary for automatic feature learning
 
 ### Key Concepts
-- 7 layers: Input → C1 → S2 → C3 → S4 → C5 → F6 → Output
-- **C1**: Conv 6 filters ($5 \times 5$) → $28 \times 28 \times 6$
-- **S2**: AvgPool ($2 \times 2$) → $14 \times 14 \times 6$
-- **C3**: Conv 16 filters ($5 \times 5$) → $10 \times 10 \times 16$
-- **S4**: AvgPool ($2 \times 2$) → $5 \times 5 \times 16$
-- **C5**: Conv 120 filters → 120 neurons
+- 7 layers: Input â†’ C1 â†’ S2 â†’ C3 â†’ S4 â†’ C5 â†’ F6 â†’ Output
+- **C1**: Conv 6 filters ($5 \times 5$) â†’ $28 \times 28 \times 6$
+- **S2**: AvgPool ($2 \times 2$) â†’ $14 \times 14 \times 6$
+- **C3**: Conv 16 filters ($5 \times 5$) â†’ $10 \times 10 \times 16$
+- **S4**: AvgPool ($2 \times 2$) â†’ $5 \times 5 \times 16$
+- **C5**: Conv 120 filters â†’ 120 neurons
 - **F6**: Fully connected 84 neurons
 - **Output**: 10 classes (digits 0-9)
 - 60,000 parameters total
@@ -155,7 +155,7 @@ $$P = \sum (k_w \times k_h \times c_{in} \times c_{out}) + bias$$
 ### Source
 The ORIGINAL CNN: LeNet-5 (1998) | Gradient-Based Learning Paper
 
-![LeNet-5 Architecture](lenet_architecture.png)
+![LeNet-5 Architecture](images/lenet_architecture.png)
 
 ---
 
@@ -203,7 +203,7 @@ The ORIGINAL CNN: LeNet-5 (1998) | Gradient-Based Learning Paper
 ### Source
 AlexNet and ImageNet: The Birth of Deep Learning (2012)
 
-![ImageNet Dataset Scale](imagenet_dataset.png)
+![ImageNet Dataset Scale](images/imagenet_dataset.png)
 
 ---
 
@@ -261,7 +261,7 @@ $$D_{eff} = D_{original} \times N_{augmentations}$$
 ### Source
 Data Augmentation for CNNs (TensorFlow Tutorial)
 
-![Data Augmentation Techniques](data_augmentation.png)
+![Data Augmentation Techniques](images/data_augmentation.png)
 
 ---
 
@@ -326,11 +326,11 @@ Keras Conv2D Documentation | Building CNNs in Keras Tutorial
 
 ### Key Concepts
 - 8 layers: 5 convolutional + 3 fully connected
-- **Conv1**: 96 filters ($11 \times 11$, stride 4) → $55 \times 55 \times 96$
-- **Conv2**: 256 filters ($5 \times 5$) → $27 \times 27 \times 256$
-- **Conv3**: 384 filters ($3 \times 3$) → $13 \times 13 \times 384$
-- **Conv4**: 384 filters ($3 \times 3$) → $13 \times 13 \times 384$
-- **Conv5**: 256 filters ($3 \times 3$) → $13 \times 13 \times 256$
+- **Conv1**: 96 filters ($11 \times 11$, stride 4) â†’ $55 \times 55 \times 96$
+- **Conv2**: 256 filters ($5 \times 5$) â†’ $27 \times 27 \times 256$
+- **Conv3**: 384 filters ($3 \times 3$) â†’ $13 \times 13 \times 384$
+- **Conv4**: 384 filters ($3 \times 3$) â†’ $13 \times 13 \times 384$
+- **Conv5**: 256 filters ($3 \times 3$) â†’ $13 \times 13 \times 256$
 - **FC6**: 4096 neurons
 - **FC7**: 4096 neurons
 - **FC8**: 1000 classes (softmax)
@@ -375,7 +375,7 @@ $$f(x) = \max(0, x)$$
 ### Source
 AlexNet: ImageNet Classification with Deep CNNs (Krizhevsky 2012)
 
-![CNN Architecture Comparison](cnn_comparison.png)
+![CNN Architecture Comparison](images/cnn_comparison.png)
 
 ---
 
@@ -395,7 +395,7 @@ AlexNet: ImageNet Classification with Deep CNNs (Krizhevsky 2012)
   - Block 3: 3$\times$ Conv (256 filters) + MaxPool
   - Block 4: 3$\times$ Conv (512 filters) + MaxPool
   - Block 5: 3$\times$ Conv (512 filters) + MaxPool
-  - FC: 4096 → 4096 → 1000
+  - FC: 4096 â†’ 4096 â†’ 1000
 - VGG-16: 138M parameters
 - VGG-19: 144M parameters
 - Two $3 \times 3$ conv = one $5 \times 5$ receptive field
@@ -493,7 +493,7 @@ $$y = F(x, \{W_i\}) + x$$
 ### Source
 Deep Residual Learning for Image Recognition (He et al. 2015)
 
-![ResNet Skip Connection Impact](resnet_skip_connection.png)
+![ResNet Skip Connection Impact](images/resnet_skip_connection.png)
 
 ---
 
@@ -510,10 +510,10 @@ Deep Residual Learning for Image Recognition (He et al. 2015)
 
 ## Evolution Timeline
 
-**1998**: LeNet-5 → Handwritten digits  
-**2012**: AlexNet → Deep learning revival  
-**2014**: VGGNet → Deeper with uniform filters  
-**2015**: ResNet → Solved vanishing gradient  
+**1998**: LeNet-5 â†’ Handwritten digits  
+**2012**: AlexNet â†’ Deep learning revival  
+**2014**: VGGNet â†’ Deeper with uniform filters  
+**2015**: ResNet â†’ Solved vanishing gradient  
 
 ---
 
@@ -531,3 +531,4 @@ Deep Residual Learning for Image Recognition (He et al. 2015)
 ---
 
 **End of Unit-III Notes**
+
